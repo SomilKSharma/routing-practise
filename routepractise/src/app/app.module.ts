@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ItemsComponent } from './items/items.component';
+import { FormsModule } from '@angular/forms';
 
 // define the routes
 const routes: Routes = [
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'Body1', component: Body1Component },
   { path: 'Body2', component: Body2Component },
   {path:'items/:id', component: ItemsComponent},
+  {path:'items', component: ItemsComponent},
   { path: '**', component: NotfoundComponent },
 ]
 
@@ -35,7 +37,8 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

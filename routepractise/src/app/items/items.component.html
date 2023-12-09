@@ -1,78 +1,85 @@
 <div class="container mt-5">
+
+    <!-- Search Bar -->
+    <div class="col-md-8 mb-3">
+        <input type="text" class="form-control" placeholder="Search" #searchValue>
+        <button [routerLink]="'/items'" (click)="searchClick(searchValue.value)"
+            class="mt-2 btn btn-primary">Submit</button>
+    </div>
     <div class="row">
 
         <!-- Card 1 -->
-        <div *ngIf="selectedItem==1 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==1 || selectedItem==0 || selectedItem=='Apple'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 1 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 1</h5>
+                    <h5 class="card-title">Apple</h5>
                     <p class="card-text">Description for Item 1 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 2 -->
-        <div *ngIf="selectedItem==2 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==2 || selectedItem==0 || selectedItem=='Mango'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 2 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 2</h5>
+                    <h5 class="card-title">Mango</h5>
                     <p class="card-text">Description for Item 2 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 3 -->
-        <div *ngIf="selectedItem==3 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==3 || selectedItem==0 || selectedItem=='Dog'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 3 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 3</h5>
+                    <h5 class="card-title">Dog</h5>
                     <p class="card-text">Description for Item 3 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 4 -->
-        <div *ngIf="selectedItem==4 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==4 || selectedItem==0 || selectedItem=='Lola'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 4 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 4</h5>
+                    <h5 class="card-title">Lola</h5>
                     <p class="card-text">Description for Item 4 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 5 -->
-        <div *ngIf="selectedItem==5 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==5 || selectedItem==0 || selectedItem=='Coca-Cola'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 5 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 5</h5>
+                    <h5 class="card-title">Coca-Cola</h5>
                     <p class="card-text">Description for Item 5 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 6 -->
-        <div *ngIf="selectedItem==6 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==6 || selectedItem==0 || selectedItem=='Someone'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 6 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 6</h5>
+                    <h5 class="card-title">Someone</h5>
                     <p class="card-text">Description for Item 6 goes here.</p>
                 </div>
             </div>
         </div>
 
         <!-- Card 7 -->
-        <div *ngIf="selectedItem==7 || selectedItem==0" class="col-md-4 mb-5">
+        <div *ngIf="selectedItem==7 || selectedItem==0 || selectedItem=='Delhi'" class="col-md-4 mb-5">
             <div class="card">
                 <img src="https://via.placeholder.com/150" class="card-img-top" alt="Item 7 Image">
                 <div class="card-body">
-                    <h5 class="card-title">Item 7</h5>
+                    <h5 class="card-title">Delhi</h5>
                     <p class="card-text">Description for Item 7 goes here.</p>
                 </div>
             </div>
