@@ -10,12 +10,14 @@ import { Body2Component } from './body2/body2.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ItemsComponent } from './items/items.component';
 
 // define the routes
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'Body1', component: Body1Component },
   { path: 'Body2', component: Body2Component },
+  {path:'items/:id', component: ItemsComponent},
   { path: '**', component: NotfoundComponent },
 ]
 
@@ -26,7 +28,8 @@ const routes: Routes = [
     Body1Component,
     Body2Component,
     HomeComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ItemsComponent
   ],
   imports: [
     BrowserModule,

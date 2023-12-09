@@ -12,6 +12,21 @@
                 <a [routerLink]="'Body2'" [routerLinkActiveOptions]="{exact:true}" [routerLinkActive]="'active'"
                     class="nav-link text-white">About</a>
             </li>
+            <li class="nav-item" (mouseenter)="showDropdown = true" (mouseleave)="showDropdown = false">
+                <a class="nav-link text-white" style="cursor: pointer;">
+                    Itemsꜜ
+                </a>
+                <div *ngIf="showDropdown" (click)="showDropdown = false" class="dropdown-menu" style="display: block;">
+                    <a class="dropdown-item" [routerLink]="'items/0'">All</a>
+                    <a class="dropdown-item" [routerLink]="'items/1'">Item 1</a>
+                    <a class="dropdown-item" [routerLink]="'items/2'">Item 2</a>
+                    <a class="dropdown-item" [routerLink]="'items/3'">Item 3</a>
+                    <a class="dropdown-item" [routerLink]="'items/4'">Item 4</a>
+                    <a class="dropdown-item" [routerLink]="'items/5'">Item 5</a>
+                    <a class="dropdown-item" [routerLink]="'items/6'">Item 6</a>
+                    <a class="dropdown-item" [routerLink]="'items/7'">Item 7</a>
+                </div>
+            </li>
         </ul>
     </div>
 </nav>

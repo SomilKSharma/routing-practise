@@ -12,4 +12,5 @@ export class HeaderComponent {
   // navigateTo() {
   //   this.router.navigate(['Body2'], {relativeTo: this.activeRoute})
   // }
+  showDropdown = false;
 }
